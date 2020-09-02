@@ -45,10 +45,10 @@ const render = ({ output, error }) => {
   const { time, battery, wifi, sound } = data
   return (
     <div className="simple-bar__data">
-      <Battery output={battery} />
       <Sound output={sound} />
       <Wifi output={wifi} />
       <DateDisplay />
+      <Battery output={battery} />
       <Time output={time} />
     </div>
   )
